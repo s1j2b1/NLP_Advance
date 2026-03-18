@@ -12,7 +12,7 @@ from sklearn.naive_bayes import MultinomialNB   # خوارزمية بسيطة و
 from sklearn.metrics import accuracy_score, classification_report  # لتقييم الموديل
 
 # latin1 الكمبيوتر كيف يفسر الحروف
-message = pd.read_csv('D:/Nlp...', encoding='latin1')
+message = pd.read_csv('D:/..', encoding='latin1')
 print(message.head())
 
 # حذف أعمدة فارغة/غير مرغوبة
