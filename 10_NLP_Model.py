@@ -8,19 +8,19 @@ from gensim.models import KeyedVectors
 import gensim.downloader as api  # لتحميل موديلات ومعاجم مدرّبة مسبقًا
 
 # قبل التحميل، استعمل السطر التالي اذا تريد حفظة في مكان محدد
-api.BASE_DIR = "D:\Viewer\JORDAN\Ai\Ai_Models"   # ← هذا مجلد الفلاش مثلاً
+api.BASE_DIR = "D:\..\Ai_Models"   
 
 # Google News مدرّب على Word2Vec يحمل نموذج
 wv= api.load('word2vec-google-news-300')  # رمز النموذج المدرب من جوجل 
 
 # KeyedVectors نسخة خفيفة من المتجهات فقط word2vec-google-news-300.kv الملف الناتج
-wv.save("D:\Viewer\JORDAN\Ai\Ai_Models/word2vec-google-news-300.kv")  # بعد ما ينتهي التحميل
+wv.save("D:/../word2vec-google-news-300.kv")  # بعد ما ينتهي التحميل
 
 # بعد فترة، مثلاً في لابتوب ثاني أو من دون إنترنت
-wv = KeyedVectors.load("D:\Viewer\JORDAN\Ai\Ai_Models/word2vec-google-news-300.kv", mmap='r')
+wv = KeyedVectors.load("D:/../word2vec-google-news-300.kv", mmap='r')
 
 # ملاحظة إضافية إذا أردت تحديد مجلد التخزين الافتراضي ⚡
-# set GENSDATA_DIR= D:\Viewer\JORDAN\Ai\Ai_Models  # بحيث كل النماذج القادمة تنزل هناك تلقائيًا.
+# set GENSDATA_DIR= D:\..\Ai_Models  # بحيث كل النماذج القادمة تنزل هناك تلقائيًا.
 
 # KeyError سيحدث vocabملاحظة: إذا الكلمة غير موجودة في الـ
 vec_king= wv['king']  # 'king' متجه الكلمة 
