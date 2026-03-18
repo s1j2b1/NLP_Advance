@@ -14,7 +14,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # UCI غالبًا من spam/hamمجموع بيانات الـ CSV يقرأ ملف
 # ضروري لأن الملف يحتوي أحرف/تشفير خاص latin1 باستخدام ترميز
-message = pd.read_csv("D:/Nlp Projects/Spam Ham classification/spam.csv", encoding='latin1')
+message = pd.read_csv("D:/../spam.csv", encoding='latin1')
 message.head()
 
 # يحذف أعمدة غير مفيدة (الأعمدة الفارغة أو الإضافية من الملف الأصلي)
