@@ -1,0 +1,12 @@
+
+numpy
+pandas
+sklearn
+nltk
+gensim
+tqdm
+keras
+warnings
+
+
+
